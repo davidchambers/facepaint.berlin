@@ -1,0 +1,25 @@
+#!/usr/bin/env node
+
+const fs              = require('node:fs');
+
+const {createContext} = require('tailwindcss/lib/lib/setupContextUtils.js');
+const loadConfig      = require('tailwindcss/loadConfig.js');
+const resolveConfig   = require('tailwindcss/resolveConfig.js');
+const defaultConfig   =         'tailwindcss/stubs/config.full.js';
+
+const sort = className =>
+  createContext(resolveConfig(loadConfig(defaultConfig)))
+  // <https://html.spec.whatwg.org/multipage/dom.html#global-attributes:classes-2>
+  // <https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#set-of-space-separated-tokens>
+  // <https://infra.spec.whatwg.org/#ascii-whitespace>
+  // > ASCII whitespace is U+0009 TAB, U+000A LF, U+000C FF, U+000D CR, or U+0020 SPACE.
+  .getClassOrder(Array.from(new Set(className.split(/[\t\n\f\r ]+/))))
+  .sort(([, a], [, z]) => a === z ? 0 : a === null ? -1 : z === null ? 1 : a < z ? -1 : a > z ? 1 : 0)
+  .map(([name]) => name)
+  .join(' ')
+;
+
+process.stdout.write(
+  fs.readFileSync(process.stdin.fd, 'utf8')
+  .replace(/class="([^"]*)"/g, (_, className) => `class="${sort(className)}"`)
+);
