@@ -1,7 +1,12 @@
 if (!('ontouchstart' in window)) {
   const IMAGES = document.querySelectorAll('#gallery img');
-  const LIGHTBOX = document.getElementById('lightbox');
-  const IMAGE = LIGHTBOX.querySelector('img');
+  const LIGHTBOX = document.createElement('div');
+  const IMAGE = document.createElement('img');
+
+  LIGHTBOX.classList.add('fixed', 'inset-0', 'hidden', 'bg-black/75', 'p-8');
+  IMAGE.classList.add('mx-auto', 'h-full', 'rounded-3xl', 'bg-white', 'object-cover', 'p-4');
+  LIGHTBOX.appendChild(IMAGE);
+  document.body.appendChild(LIGHTBOX);
 
   let $index = -1;
 
