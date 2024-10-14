@@ -652,10 +652,6 @@ video {
   width: max-content;
 }
 
-.w-screen {
-  width: 100vw;
-}
-
 .max-w-md {
   max-width: 28rem;
 }
