@@ -828,10 +828,6 @@ video {
   line-height: 2.5rem;
 }
 
-.text-\[8vw\] {
-  font-size: 8vw;
-}
-
 .text-lg {
   font-size: 1.125rem;
   line-height: 1.75rem;
@@ -849,10 +845,6 @@ video {
 
 .font-bold {
   font-weight: 700;
-}
-
-.leading-none {
-  line-height: 1;
 }
 
 .leading-tight {
@@ -951,6 +943,10 @@ video {
 
   .lg\:text-\[6vw\] {
     font-size: 6vw;
+  }
+
+  .lg\:leading-none {
+    line-height: 1;
   }
 }
 
