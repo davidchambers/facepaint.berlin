@@ -2,14 +2,15 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>facepaint.berlin</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Averia+Serif+Libre&display=swap">
-    <link rel="stylesheet" href="tailwind@a9817a9516a465c7a09d82ffb2e93be0.css">
+    <link rel="stylesheet" href="tailwind@4f8f38da6aab2077447c147b576e30ce.css">
   </head>
-  <body style="--off-white: #fffaf1; font-family: 'Averia Serif Libre', serif">
-    <header class="flex h-20 items-center justify-between px-6">
+  <body style="--off-white: #fffaf1; font-family: 'Averia Serif Libre', serif" class="absolute w-full">
+    <header class="flex h-20 items-center justify-between pl-4 pr-6">
       <div class="flex items-center">
         <img alt="" src="logo.png" class="h-16">
         <h1 class="text-2xl">Kate Chambers</h1>
@@ -30,11 +31,11 @@
             </p>
           </div>
         </div>
-        <section class="flex flex-col gap-8 py-12 lg:px-[15%]">
+        <section class="flex flex-col gap-8 px-4 py-12 lg:px-[15%]">
           <h2 class="text-center text-4xl">
             My work
           </h2>
-          <ul id="gallery" class="grid grid-flow-row-dense auto-rows-fr grid-cols-2 gap-4 px-4 md:grid-cols-3 lg:grid-cols-4">
+          <ul id="gallery" class="grid grid-flow-row-dense auto-rows-fr grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-4">
             <li>
               <img class="h-full w-full rounded-xl object-cover" alt="" src="image-1.jpeg">
             </li>
@@ -100,17 +101,17 @@
             </li>
           </ul>
         </section>
-        <section class="flex flex-col gap-8 bg-[var(--off-white)] py-12">
+        <section class="flex flex-col gap-8 bg-[var(--off-white)] px-4 py-12">
           <h2 class="text-center text-4xl">
             My services
           </h2>
           <div class="flex justify-center gap-8">
             <div class="flex w-1/2 max-w-xs flex-col gap-4 text-center">
               <img class="mx-auto h-24" alt="" src="bear.png">
-              <h3 class="text-3xl">
+              <h3 class="text-2xl md:text-3xl">
                 For children
               </h3>
-              <ul class="flex flex-col gap-2 text-xl">
+              <ul class="flex flex-col gap-2 text-lg md:text-xl">
                 <li>• Birthdays</li>
                 <li>• Kita parties</li>
                 <li>• Sommerfest</li>
@@ -121,10 +122,10 @@
             </div>
             <div class="flex w-1/2 max-w-xs flex-col gap-4 text-center">
               <img class="mx-auto h-24" alt="" src="martini.png">
-              <h3 class="text-3xl">
+              <h3 class="text-2xl md:text-3xl">
                 For grown-ups
               </h3>
-              <ul class="flex flex-col gap-2 text-xl">
+              <ul class="flex flex-col gap-2 text-lg md:text-xl">
                 <li>• Birthdays</li>
                 <li>• Bachelorette parties</li>
                 <li>• Sommerfest</li>
@@ -135,7 +136,7 @@
             </div>
           </div>
         </section>
-        <section class="flex flex-col gap-8 py-12">
+        <section class="flex flex-col gap-8 px-4 py-12">
           <h2 class="text-center text-4xl">
             Materials
           </h2>
@@ -143,7 +144,7 @@
             <div class="mx-auto aspect-[4/5] w-36">
               <img class="h-full w-full object-contain" alt="" src="palette.png">
             </div>
-            <div class="flex max-w-md flex-col text-xl">
+            <div class="flex max-w-md flex-col text-lg md:text-xl">
               <ul class="flex flex-col gap-4">
                 <li>• I use safe, non-toxic, water-based paints that are safe for both children and grown-ups.</li>
                 <li>• The paint doesn’t stain and can be washed off with water.</li>
@@ -152,15 +153,13 @@
             </div>
           </div>
         </section>
-        <section class="flex flex-col gap-8 bg-[var(--off-white)] py-12">
+        <section class="flex flex-col gap-8 bg-[var(--off-white)] px-4 py-12">
           <h2 class="text-center text-4xl">
             Price
           </h2>
           <div class="mx-auto flex flex-col gap-10 text-center">
-            <div class="mx-auto h-56 max-w-md">
-              <img class="h-full w-full object-cover object-top" alt="" src="ticket.png">
-            </div>
-            <div class="flex flex-col gap-4 text-xl">
+            <img class="mx-auto w-full max-w-md" alt="" src="ticket.png">
+            <div class="flex flex-col gap-4 text-lg md:text-xl">
               <p class="mx-auto w-3/4">
                 In one hour I’ll paint ~10 masks for kids, or up to 6 for grown-ups
                 (depending on the complexity of the designs).
@@ -171,11 +170,11 @@
             </div>
           </div>
         </section>
-        <section class="flex flex-col gap-8 py-12" id="contact">
+        <section class="flex flex-col gap-8 px-4 py-12" id="contact">
           <h2 class="text-center text-4xl">
             Contact
           </h2>
-          <div class="mx-auto flex flex-col gap-8 text-center text-xl">
+          <div class="mx-auto flex flex-col gap-8 text-center text-lg md:text-xl">
             <p>
               You can reach me via Instagram or email.
             </p>
