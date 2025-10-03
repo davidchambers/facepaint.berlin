@@ -941,8 +941,8 @@ video {
     font-size: 2vw;
   }
 
-  .lg\:text-\[6vw\] {
-    font-size: 6vw;
+  .lg\:text-\[4vw\] {
+    font-size: 4vw;
   }
 
   .lg\:leading-none {
