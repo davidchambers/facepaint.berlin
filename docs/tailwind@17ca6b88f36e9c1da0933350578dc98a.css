@@ -931,14 +931,6 @@ video {
     gap: 0px;
   }
 
-  .lg\:rounded-ee-\[300px\] {
-    border-end-end-radius: 300px;
-  }
-
-  .lg\:rounded-se-\[24px\] {
-    border-start-end-radius: 24px;
-  }
-
   .lg\:px-8 {
     padding-left: 2rem;
     padding-right: 2rem;
