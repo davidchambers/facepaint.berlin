@@ -831,6 +831,10 @@ video {
   text-align: center;
 }
 
+.font-\[Montserrat\] {
+  font-family: Montserrat;
+}
+
 .text-2xl {
   font-size: 1.5rem;
   line-height: 2rem;
@@ -849,11 +853,6 @@ video {
 .text-sm {
   font-size: 0.875rem;
   line-height: 1.25rem;
-}
-
-.text-xl {
-  font-size: 1.25rem;
-  line-height: 1.75rem;
 }
 
 .font-bold {
@@ -954,8 +953,9 @@ video {
     text-align: left;
   }
 
-  .lg\:text-\[2vw\] {
+  .lg\:text-\[2vw\]\/10 {
     font-size: 2vw;
+    line-height: 2.5rem;
   }
 
   .lg\:text-\[4vw\] {
