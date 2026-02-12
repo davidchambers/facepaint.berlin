@@ -886,6 +886,22 @@ video {
   transition-duration: 700ms;
 }
 
+.selection\:bg-\[var\(--yellow\)\] *::-moz-selection {
+  background-color: var(--yellow);
+}
+
+.selection\:bg-\[var\(--yellow\)\] *::selection {
+  background-color: var(--yellow);
+}
+
+.selection\:bg-\[var\(--yellow\)\]::-moz-selection {
+  background-color: var(--yellow);
+}
+
+.selection\:bg-\[var\(--yellow\)\]::selection {
+  background-color: var(--yellow);
+}
+
 @media (min-width: 768px) {
   .md\:grid-cols-4 {
     grid-template-columns: repeat(4, minmax(0, 1fr));
