@@ -6,3 +6,4 @@ all:
 .PHONY: twsort
 twsort:
 	cat docs/index.html | scripts/twsort | sponge docs/index.html
+	cat docs/de/index.html | scripts/twsort | sponge docs/de/index.html
